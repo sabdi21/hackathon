@@ -9,7 +9,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Shukri Abdi and Bryan Brinson
 
 =========================================================
 

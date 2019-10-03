@@ -9,7 +9,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Shukri Abdi and Bryan Brinson
 
 =========================================================
 
@@ -35,7 +35,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import SubNavbar from "components/Navbars/SubNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import McuFooter from "components/Footers/McuFooter.js";
 
@@ -57,7 +57,7 @@ function ProfilePage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <SubNavbar />
       <ProfilePageHeader />
       <div className="section profile-content">
         <Container>
