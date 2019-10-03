@@ -69,10 +69,9 @@ function IndexNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/index"
-            target="_blank"
             title="Coded by Shukri Abdi and Bryan Brinson"
           >
-            Paper Kit React
+            MCU Otaku Home
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
