@@ -31,7 +31,7 @@ function IndexHeader() {
         className="page-header section-dark"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")"
+            "url(" + require("assets/images/Avengers-Endgame.png") + ")"
         }}
       >
         <div className="filter" />
@@ -47,7 +47,7 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
+              {/* Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit! */}
             </h2>
           </Container>
         </div>
