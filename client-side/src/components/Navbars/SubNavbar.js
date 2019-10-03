@@ -29,6 +29,7 @@ import {
   NavItem,
   NavLink,
   Nav,
+  Button,
   Container
 } from "reactstrap";
 
@@ -96,63 +97,71 @@ function SubNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            {/* <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
+          <Nav navbar>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                // href="https://twitter.com/CreativeTim?ref=creativetim"
+                target="_blank"
+                title="Follow us on Twitter"
+              >
+                <i className="fa fa-gavel"/>Heros
+                <p className="d-lg-none">b</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
+                data-placement="bottom"
+                // href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                target="_blank"
+                // title="Like us on Facebook"
+              >
+                <i className="fa fa-reddit" />Posts
+                {/* <p className="d-lg-none"></p> */}
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                target="_blank"
+                title="Follow us on Instagram"
+              >
+                <i className="fa fa-tv" />Movie List
+                {/* <p className="fas fa-film">Instagram</p> */}
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://github.com/sabdi21/hackathon"
+                target="_blank"
+                title="Star on GitHub"
+              >
+                <i className="fa fa-github" />GitHub
+                {/* <p className="d-lg-none">GitHub</p> */}
+              </NavLink>
+            </NavItem>
+            {/* <NavItem>
+              <NavLink
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
                 target="_blank"
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
-              </NavLink>
             </NavItem> */}
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                // href="/register-page"
+                target="_blank"
+                // to="/register-page"
+              >
+                <Link to="/register-page">Register / Login</Link>
+              </Button>
+            </NavItem>
+          </Nav>
           </Nav>
         </Collapse>
       </Container>

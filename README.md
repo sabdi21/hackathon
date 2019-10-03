@@ -37,4 +37,4 @@ What do we want the designer to do:
 ####  -home page
 #### -movie page
 #### -character page
-####  -user sign-up/sign-in/log-in/profile
+####  -user profile

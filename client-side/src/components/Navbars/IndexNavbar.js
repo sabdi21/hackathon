@@ -98,8 +98,8 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <i className="fa fa-gavel"/>Heros
-                <p className="d-lg-none">b</p>
+                <Link to="/characters"><i className="fa fa-gavel"/>Hero List</Link>
+                <p className="d-lg-none"></p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -120,7 +120,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Instagram"
               >
-                <i className="fa fa-tv" />Movie List
+                <Link to="/movies"><i className="fa fa-tv" />Movie List</Link>
                 {/* <p className="fas fa-film">Instagram</p> */}
               </NavLink>
             </NavItem>
@@ -147,7 +147,7 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="/register-page"
+                // href="/register-page"
                 target="_blank"
                 // to="/register-page"
               >

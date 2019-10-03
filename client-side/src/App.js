@@ -14,8 +14,13 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 
+
 // others
 import BASE_URL from './constants';
+import Movies from "views/marvel/Movies";
+import BlogPosts from "views/marvel/BlogPosts";
+import Characters from "views/marvel/Characters";
+import CardGame from "views/marvel/CardGame";
 
 const App = () => {
 
@@ -67,6 +72,22 @@ const App = () => {
         <Route
           path="/register-page"
           render={props => <RegisterPage {...props} user={user} updateUser={getUser} />}
+        />
+        <Route
+          path="/movies"
+          render={props => <Movies {...props} user={user} updateUser={getUser} />}
+        />
+        <Route
+          path="/characters"
+          render={props => <Characters {...props} user={user} updateUser={getUser} />}
+        />
+        <Route
+          path="/blog-posts"
+          render={props => <BlogPosts {...props} user={user} updateUser={getUser} />}
+        />
+        <Route
+          path="/card-game"
+          render={props => <CardGame {...props} user={user} updateUser={getUser} />}
         />
         <Redirect to="/index" />
       </Switch>

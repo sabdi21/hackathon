@@ -135,7 +135,7 @@ function ProfilePage() {
                         <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                           <h6>
                             Flume <br />
-                            <small>Musical Producer</small>
+                            <small>Dangerous Criminal</small>
                           </h6>
                         </Col>
                         <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
@@ -159,7 +159,7 @@ function ProfilePage() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                            src={require("assets/images/harley-q.jpg")}
                           />
                         </Col>
                         <Col lg="7" md="4" xs="4">
