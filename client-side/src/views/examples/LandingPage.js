@@ -9,7 +9,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Shukri Abdi and Bryan Brinson
 
 =========================================================
 
@@ -36,7 +36,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import SubNavbar from "components/Navbars/SubNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import McuFooter from "components/Footers/McuFooter.js";
 
@@ -50,7 +50,7 @@ function LandingPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <SubNavbar />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">

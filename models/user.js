@@ -4,7 +4,7 @@ let bcrypt = require('bcryptjs')
 let userSchema = new mongoose.Schema({
     firstname: {
       type: String,
-      required: true,
+      required: false,
       minlength: 1
     },
     lastname: String,
@@ -17,7 +17,7 @@ let userSchema = new mongoose.Schema({
     password: {
       type: String,
       required: true,
-      minlength: 8,
+      minlength: 3,
       maxlength: 32
     },
     profileUrl: String

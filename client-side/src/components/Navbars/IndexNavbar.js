@@ -9,7 +9,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Shukri Abdi and Bryan Brinson
 
 =========================================================
 
@@ -69,7 +69,7 @@ function IndexNavbar() {
             data-placement="bottom"
             href="/index"
             target="_blank"
-            title="Coded by Creative Tim"
+            title="Coded by Shukri Abdi and Bryan Brinson"
           >
             Paper Kit React
           </NavbarBrand>
@@ -149,7 +149,6 @@ function IndexNavbar() {
                 color="danger"
                 href="#pablo"
                 target="_blank"
-                
               >
                 Register / Login
               </Button>

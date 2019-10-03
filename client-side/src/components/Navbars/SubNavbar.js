@@ -9,7 +9,7 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
-* Coded by Creative Tim
+* Coded by Shukri Abdi and Bryan Brinson
 
 =========================================================
 
@@ -32,7 +32,7 @@ import {
   Container
 } from "reactstrap";
 
-function ExamplesNavbar() {
+function SubNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -73,11 +73,10 @@ function ExamplesNavbar() {
           <NavbarBrand
             data-placement="bottom"
             to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            title="MCU Otaku"
             tag={Link}
           >
-            Paper Kit 2
+            MCU Otaku
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -97,7 +96,7 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <NavLink to="/index" tag={Link}>
                 <i className="nc-icon nc-layout-11" /> Components
               </NavLink>
@@ -153,7 +152,7 @@ function ExamplesNavbar() {
                 <i className="fa fa-github" />
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>
@@ -161,4 +160,4 @@ function ExamplesNavbar() {
   );
 }
 
-export default ExamplesNavbar;
+export default SubNavbar;
