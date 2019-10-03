@@ -18,7 +18,7 @@
 */
 import React, { useState } from "react";
 import axios from "axios";
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 // reactstrap components
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
@@ -111,7 +111,7 @@ function RegisterPage(props) {
                       color="danger"
                       type="submit"
                     >
-                      Register
+                      <Link to="/profile-page">Register</Link>
                     </Button>
                   </Form>
                   <div className="forgot">
