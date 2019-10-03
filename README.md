@@ -30,10 +30,11 @@ Passions and hobbies and being unapologetic about geeky stuff!
 
 What do we want the designer to do:
 #### -Create a minimalist approach to the marvel page
--persona: What do we want people to see in this app
--Who do we need to attract 
-
--create a wirefram
--home page
--movie page
--
+####  -persona: What do we want people to see in this app
+####  -Who do we need to attract 
+---------------------------------------------------
+#### -create a wireframe
+####  -home page
+#### -movie page
+#### -character page
+####  -user sign-up/sign-in/log-in/profile
