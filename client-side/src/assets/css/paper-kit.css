@@ -1000,6 +1000,7 @@
     border-top-color: #FFFFFF; }
 
 .btn-danger {
+  text-decoration: none;
   background-color: #f5593d;
   border-color: #f5593d;
   color: #FFFFFF;
