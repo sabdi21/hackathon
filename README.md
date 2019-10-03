@@ -29,7 +29,7 @@ Passions and hobbies and being unapologetic about geeky stuff!
 
 
 What do we want the designer to do:
--Create a minimalist approach to the marvel page
+#### -Create a minimalist approach to the marvel page
 -persona: What do we want people to see in this app
 -Who do we need to attract 
 
