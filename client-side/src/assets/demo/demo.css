@@ -19,7 +19,9 @@
 .tim-row {
   margin-bottom: 20px;
 }
-
+.left {
+  max-height: 50px;
+}
 .register-card {
   padding-top: 200px;
 }
