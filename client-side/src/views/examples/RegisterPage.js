@@ -26,6 +26,7 @@ import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 // core components
 import SubNavbar from "components/Navbars/SubNavbar.js";
 import { BASE_URL }  from "../../constants";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function RegisterPage(props) {
   document.documentElement.classList.remove("nav-open");
@@ -82,18 +83,21 @@ function RegisterPage(props) {
   } else {
     return (
       <>
-        <SubNavbar />
-        <div
+        <IndexNavbar />
+        <div class="gradient"></div>
+                <div id="stars"></div>
+        {/* <div
           className="page-header"
           style={{
             backgroundImage:
               "url(" + require("assets/img/login-image.jpg") + ")"
           }}
-        >
+        > */}
           <div className="filter" />
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" lg="4">
+                <div className="register-card">
                 <Card className="card-register ml-auto mr-auto">
                   <h3 className="title mx-auto">Welcome</h3>
                   <Form className="register-form" onSubmit={handleSubmit}>
@@ -124,6 +128,7 @@ function RegisterPage(props) {
                     </Button>
                   </div>
                 </Card>
+                </div>
               </Col>
             </Row>
           </Container>
@@ -134,7 +139,7 @@ function RegisterPage(props) {
               Brinson
             </h6>
           </div>
-        </div>
+        {/* </div> */}
       </>
     );
   }

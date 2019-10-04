@@ -20,9 +20,21 @@
   margin-bottom: 20px;
 }
 
+.register-card {
+  padding-top: 200px;
+}
+.card-image {
+  max-width: 40%;
+}
 .movie-cards {
   padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 70px;
+  min-width: 90%;
   border: 2px solid black;
+}
+.card-description {
+  overflow: scroll;
 }
 
 .tim-white-buttons {

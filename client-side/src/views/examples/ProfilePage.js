@@ -38,6 +38,8 @@ import {
 import SubNavbar from "components/Navbars/SubNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import McuFooter from "components/Footers/McuFooter.js";
+import LandingPageHeader from "components/Headers/LandingPageHeader";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -57,8 +59,9 @@ function ProfilePage() {
   });
   return (
     <>
-      <SubNavbar />
+      <IndexNavbar />
       <ProfilePageHeader />
+      {/* <LandingPageHeader /> */}
       <div className="section profile-content">
         <Container>
           <div className="owner">
