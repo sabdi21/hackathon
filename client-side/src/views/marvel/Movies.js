@@ -5,19 +5,26 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import MovieList from 'views/marvel/MovieList.js'
 
 
-class Movies extends React.Component {
+const Movies = props => {
+    const displayItems = props.items.map((item, i) => {
+        return <TodoListItem 
+        item={item} 
+        key={i} 
+        index={i} 
+        delete={props.delete} 
+        markDone={props.markDone}
+        />
+    })
 
-    render() {
-
-        return (  
-            <div>
-                <IndexNavbar />
-                {/* <Counter items={this.state.items} /> */}
-                {/* <Controls add={this.add} clear={this.clear} /> */}
-                <MovieList items={this.state.items} delete={this.delete} markDone={this.markDone} add={this.add} clear={this.clear} items={this.state.items}/>
-            </div>
-        )
-    }
+    return(
+        <div>
+            <h3>TodoList: My Current List</h3>
+            {/* todoListitems: below  */}
+            <ul>
+                {displayItems}
+            </ul>
+        </div>
+    )
 }
 
 export default Movies
