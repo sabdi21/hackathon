@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import axios from 'axios';
+import { BASE_URL } from '../src/constants';
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -8,18 +9,13 @@ import "assets/scss/paper-kit.scss";
 import "assets/demo/demo.css";
 
 // pages
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-
-
-// others
-import BASE_URL from './constants';
+import Index from "views/Index";
+import NucleoIcons from "views/NucleoIcons";
+import CharacterCards from "views/marvel/Characters";
+import ProfilePage from "views/examples/ProfilePage";
+import RegisterPage from "views/examples/RegisterPage";
 import Movies from "views/marvel/Movies";
 import BlogPosts from "views/marvel/BlogPosts";
-import Characters from "views/marvel/Characters";
 import CardGame from "views/marvel/CardGame";
 
 const App = () => {
@@ -62,10 +58,6 @@ const App = () => {
           render={props => <NucleoIcons {...props} />}
         />
         <Route
-          path="/landing-page"
-          render={props => <LandingPage {...props} user={user}/>}
-        />
-        <Route
           path="/profile-page"
           render={props => <ProfilePage {...props} user={user} updateUser={getUser} />}
         />
@@ -78,8 +70,8 @@ const App = () => {
           render={props => <Movies {...props} user={user} updateUser={getUser} />}
         />
         <Route
-          path="/characters"
-          render={props => <Characters {...props} user={user} updateUser={getUser} />}
+          path="/heros"
+          render={props => <CharacterCards {...props} user={user} />}
         />
         <Route
           path="/blog-posts"
