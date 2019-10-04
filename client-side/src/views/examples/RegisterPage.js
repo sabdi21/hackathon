@@ -25,7 +25,7 @@ import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
 import SubNavbar from "components/Navbars/SubNavbar.js";
-import BASE_URL from "../../constants";
+import { BASE_URL }  from "../../constants";
 
 function RegisterPage(props) {
   document.documentElement.classList.remove("nav-open");
@@ -36,13 +36,13 @@ function RegisterPage(props) {
     };
   });
 
-  const [body, setBody] = useState({
+  const [body] = useState({
     email: "",
     password: ""
   });
 
   const [redirectHome, setRedirectHome] = useState(false);
-  const [redirectProfile, setRedirectProfile] = useState(false);
+  const [redirectProfile] = useState(false);
 
   // const [tooltipOpen, setTooltipOpen] = React.useState(false);
 
