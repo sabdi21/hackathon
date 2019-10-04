@@ -80,6 +80,7 @@ const CharacterCards = props => {
     // console.log("heros array", herosArray);
     heroCards = herosArray.map((h, idx) => (
       <Col className="ml-auto mr-auto" lg="11" key={idx}>
+        <div className="game-card">
         <ReactCardFlip isFlipped={isFlipped}>
           <Card className="ml-auto mr-auto" key="front">
             <CardImg top width="100%" src={h.img} alt="Card Image" />
@@ -104,6 +105,7 @@ const CharacterCards = props => {
             </CardBody>
           </Card>
         </ReactCardFlip>
+        </div>
       </Col>
     ));
   }

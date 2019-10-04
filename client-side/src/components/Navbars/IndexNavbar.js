@@ -98,7 +98,7 @@ function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/posts">
+              <NavLink tag={Link} to="/blog-posts">
                 <i className="fa fa-reddit" />
                 Posts
               </NavLink>

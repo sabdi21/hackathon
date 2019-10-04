@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, Row, CardGroup } from 'reactstrap'
+    CardTitle, CardSubtitle, Button, Row, CardGroup, Col} from 'reactstrap'
 import IndexNavbar from 'components/Navbars/IndexNavbar';
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 // import MovieList from 'views/marvel/MovieList'
@@ -47,11 +47,6 @@ class Movies extends React.Component {
         document.getElementById('status')
     }
 
-    // handleEvent = (e) => {
-    //     e.preventDefault()
-    //     console.log('button was clicked')
-    //     this.setState({status: 'Yes!'})
-    // }
     render() {
         return ( 
             <>
@@ -62,28 +57,30 @@ class Movies extends React.Component {
                     {this.state.items.map((items, index) => (
                         <div className="movie-cards">
 
-                        <Row>
-                            <Card > <strong></strong>
+                        <Col>
+                            <Card className="card-container" > <strong></strong>
                             <div className="left">
-                                <img class="card-image" top width="25%" src={items.img} alt="Card image cap" /></div>
-                                    <CardBody>
-                                    <CardTitle><strong>#{items.order} {items.movie}</strong></CardTitle>
-                                    <CardSubtitle>({items.year})</CardSubtitle>
-                                    <CardText className="card-description">{items.description}</CardText>
-                                    <div>
+                                <img class="card-image" left width="45%" height="100%" src={items.img} /></div>
+                                <div className="right">
+                                {/* <CardBody className="right"> */}
+                                    <h3>#{items.order} {items.movie}</h3>
+                                    <h4>({items.year})</h4>
+                                    <h6>className="card-description">{items.description}</h6> 
+                                    <span>
                                         <h4>Did you watch this movie?</h4>
-                                        <Button onClick={this.onClickButton1}>
+                                        <Button className="button" onClick={this.onClickButton1}> 
                                         No
                                         </Button>
-                                        <Button onClick={this.onClickButton2}>
+                                        <Button className="button" onClick={this.onClickButton2}> 
                                         Yes
                                         </Button>
-                                        <h1>{this.state.status}</h1>
-                                        <div id="status"></div>
-                                    </div>
-                                </CardBody>
+                                        <h3>{this.state.status}</h3>
+                                        {/* <div id="status"></div> */}
+                                    </span>
+                                {/* </CardBody> */}
+                                </div>
                             </Card>
-                        </Row>
+                        </Col>
                     </div>
                     ))}
 

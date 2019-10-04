@@ -19,14 +19,40 @@
 .tim-row {
   margin-bottom: 20px;
 }
+
+.card-container {
+  /* position: realative; */
+  color:white;
+  background-color: #09151a;
+}
+.button {
+  position: relative;
+  margin-right: 10px;
+}
 .left {
-  max-height: 50px;
+  position: absolute;
+  
+  /* height: 200%;
+  width: 210%; */
+  /* border: 2px green solid;  */
+}
+.right {
+  padding-left: 440px;
+  position: relative;
+  /* border: 2px red solid; */
 }
 .register-card {
   padding-top: 200px;
 }
 .card-image {
-  max-width: 40%;
+  position: left;
+  max-width: 30%;
+  height: 100px;
+  display: cover;
+  display: inline-block;
+}
+.game-card {
+  padding-top: 100px;
 }
 .movie-cards {
   padding-top: 100px;
@@ -263,7 +289,11 @@
   width: 100%;
   position: relative;
 }
-
+.message {
+  padding-top: 30px;
+  color: white;
+  
+}
 .tim-note {
   text-transform: capitalize;
 }
