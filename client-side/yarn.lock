@@ -8350,6 +8350,11 @@ react-bootstrap-switch@15.5.3:
   resolved "https://registry.yarnpkg.com/react-bootstrap-switch/-/react-bootstrap-switch-15.5.3.tgz#97287791d4ec0d1892d142542e7e5248002b1251"
   integrity sha1-lyh3kdTsDRiS0UJULn5SSAArElE=
 
+react-card-flip@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/react-card-flip/-/react-card-flip-0.8.1.tgz#53cd036d5145a10a5c45f2419252d6b5f8e47d8e"
+  integrity sha512-iuyRAya8anf5aaR6BTCYyF4Z767WEgzkYSUfjxEG2zwQYvXHv98NtngAQRM+lqmwYLPTv/5cuCIOsZapy38x0g==
+
 react-datetime@2.16.3:
   version "2.16.3"
   resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.16.3.tgz#7f9ac7d4014a939c11c761d0c22d1fb506cb505e"
