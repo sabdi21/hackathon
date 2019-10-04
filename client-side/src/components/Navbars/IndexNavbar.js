@@ -98,7 +98,7 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <Link to="/characters"><i className="fa fa-gavel"/>Hero List</Link>
+                <Link to="/heros"><i className="fa fa-gavel"/>Hero List</Link>
                 <p className="d-lg-none"></p>
               </NavLink>
             </NavItem>
