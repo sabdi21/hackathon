@@ -100,7 +100,7 @@ const CharacterCards = props => {
               <CardText>Weaknesses</CardText>
               <CardText>Friends</CardText>
               <CardText>Enemy</CardText>
-              <Button onClick={handleFlip}>Stats</Button>
+              <Button onClick={handleFlip}>Description</Button>
             </CardBody>
           </Card>
         </ReactCardFlip>
@@ -113,8 +113,8 @@ const CharacterCards = props => {
       <IndexNavbar />
       <div className="gradient"></div>
       <div id="stars"></div>
-      {/* <h1 className="title mx-auto"> </h1>
-      <h1 className="title mx-auto"> </h1> */}
+      <h1 className="title mx-auto"> </h1>
+      <h1 className="title mx-auto"> </h1>
       <CardColumns>{heroCards}</CardColumns>
       <McuFooter />
     </>
