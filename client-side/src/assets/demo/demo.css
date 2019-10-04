@@ -20,6 +20,11 @@
   margin-bottom: 20px;
 }
 
+.movie-cards {
+  padding-top: 100px;
+  border: 2px solid black;
+}
+
 .tim-white-buttons {
   background-color: #777777;
 }

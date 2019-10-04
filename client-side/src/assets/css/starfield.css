@@ -5,7 +5,9 @@ html {
   background: black;
   background-repeat: repeat;
 }
-
+Card {
+  padding-top: 100px;
+}
 
 .gradient {
   width: 100%;

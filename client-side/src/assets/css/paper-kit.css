@@ -4515,7 +4515,7 @@ License - nucleoapp.com/license/
   margin-bottom: 0; }
 
 .page-header {
-  background-color: #B2AFAB;
+  /* background-color: #B2AFAB; */
   background-position: center center;
   background-size: cover;
   min-height: 100vh;

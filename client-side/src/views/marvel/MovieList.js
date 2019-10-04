@@ -5,57 +5,29 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import Movies from "views/marvel/Movies.js"
 
 
-class MovieList extends React.Component {
-    state = {
-        items: [
-          {text: "Walk the Dog", finished: false },
-          {text: "Walk the Cat", finished: true },
-          {text: "Walk the Bird", finished: false },
-          {text: "Walk the Lizard", finished: false },
-          {text: "Walk the Fish", finished: true }
-        ]
-      }
-
-      add = (newItemText) => {
-        this.setState({items: [...this.state.items, {text: newItemText, finished: false}]})
-      }
-      clear = () => {
-        this.setState({items: []})
-      }
-      delete = (indexToDelete) => {
-        console.log('Delete item', indexToDelete)
-        let currentItems = [...this.state.items]
-        currentItems.splice(indexToDelete, 1)
-        this.setState({ items: currentItems })
-      }
-      markDone = (indexToChange) => {
-        console.log('Mark Done item', indexToChange)
-        let currentItems = [...this.state.items]
-        currentItems[indexToChange].finished = !currentItems[indexToChange].finished
-        this.setState({ items: currentItems })
-      }
-    render() {
-        const displayItems = this.items.map((item, i) => {
-            return <Movies 
-            item={item} 
-            key={i} 
-            index={i} 
-            delete={this.delete} 
-            markDone={this.markDone}
-            />
-        })
+const MovieList = (props) => {
+    const displayItems = props.items.map((item, i) => {
+        return <Movies 
+        item={item} 
+        key={i} 
+        index={i} 
+        />
+        
+    })
         return (  
             <div>
             
                 <LandingPageHeader />
                 <IndexNavbar />
                 <h1>Movies page</h1>
-             
+                {displayItems}
+                
+                {/* <Movies movies={displayItems} /> */}
+
 
             </div>
 
         )
-    }
 }
 
 export default MovieList
